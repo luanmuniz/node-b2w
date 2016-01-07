@@ -4,7 +4,6 @@
 
 root = true
 
-
 [*]
 indent_style = tab
 indent_size = 4
@@ -13,6 +12,7 @@ charset = utf-8
 trim_trailing_whitespace = true
 insert_final_newline = true
 max_line_length = 80
+wrap_width = 80
 
 [*.md]
 trim_trailing_whitespace = false
@@ -21,6 +21,8 @@ trim_trailing_whitespace = false
 indent_style = space
 indent_size = 2
 max_line_length = false
+wrap_width = false
 
 [*.xml]
 max_line_length = false
+wrap_width = false

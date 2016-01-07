@@ -1,0 +1,9 @@
+coverage
+.editorconfig
+gulp-config
+gulpfile.js
+.jscs.json
+.jshintrc
+test
+docs
+CONTRIBUTING.md
