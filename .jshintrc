@@ -16,5 +16,6 @@
 
 	"browser": true, // This app run in a browser env
 	"jquery": true, // This app run jQuery
-	"node": true // This app run in a Node env
+	"node": true, // This app run in a Node env,
+	"esnext": true
 }

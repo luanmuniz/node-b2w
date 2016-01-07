@@ -12,12 +12,10 @@ ehthumbs.db
 Thumbs.db
 Desktop.ini
 
-# Grunt/Compass/Node.js/NPM
+# Node.js/NPM
 ###########
-.sass-cache
 node_modules
 npm-debug.log
-.grunt
 coverage
 
 # General
@@ -28,5 +26,5 @@ coverage
 *.cache
 backup/
 cache/
-ignore-*
-config.json
+.idea/
+*.swp
