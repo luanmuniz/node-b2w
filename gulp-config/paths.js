@@ -5,6 +5,6 @@ module.exports = {
 		'./lib/**/*.js'
 	],
 	testFiles: [
-		'./test/{api,unit}/**/*.js'
+		'./test/**/test-*.js'
 	]
 };

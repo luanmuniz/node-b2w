@@ -1,10 +1,11 @@
 B2W Node
 ===================
+
+> A library for the B2W Group (Americanas.com, Submarino & Shoptime) API using Promises
+
 [![Circle CI][circle-image]][circle-url] [![Dependency Status][depstat-image]][depstat-url] [![Coveralls][coveralls-image]][coveralls-url] [![NPM Version][node-image]][node-url]
 
 [![Node Build][nodei-image]][nodei-url]
-
-A library for the B2W Group (Americanas.com, Submarino & Shoptime) API using Promises
 
 ## Documentation
 

@@ -12,29 +12,30 @@ gulp.task('pre-test', ['lint'], done => {
 	process.env.NODE_ENV = 'test';
 	return gulp.src(paths.js)
 		.pipe(istanbul())
-		.on('error', handleError(done))
+		.once('error', handleError(done))
 		.pipe(istanbul.hookRequire());
 });
 
 gulp.task('test', [ 'pre-test' ], done => {
 	return gulp.src(allFiles)
 		.pipe(mocha())
-		.on('error', handleError(done))
+		.once('error', handleError(done, true))
 		.pipe(istanbul.writeReports())
 		.pipe(istanbul.enforceThresholds({
 			thresholds: coverage
 		}))
-		.on('error', () => {
+		.once('error', () => {
 			console.log('MINIMUM COVERAGE:\n', coverage.global);
 			console.log('='.repeat(80));
 			process.exit(1);
 		})
-		.on('end', handleError(done));
+		.once('end', handleError(done));
 });
 
-function handleError(done) {
+function handleError(done, exit) {
 	return (err) => {
-		console.log('ERROR:', err);
+		console.log('ERROR:');
+		console.error(err);
 		done();
 		process.exit();
 	};

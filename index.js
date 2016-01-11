@@ -6,8 +6,7 @@ var coreAPI = require('./lib/core'),
 module.exports = function(keys, env) {
 	var apiObj = {};
 
-	coreAPI = coreAPI.init(keys, env);
-
+	apiObj.coreAPI = coreAPI.init(keys, env);
 	apiObj.products = productsAPI.init(coreAPI);
 
 	return apiObj;
