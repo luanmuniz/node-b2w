@@ -11,6 +11,34 @@ describe('Checking xml mock', function() {
 		agent.get('product.xml')
 			.expect(200)
 			.end(function (err, res) {
+				console.log(err, res);
+				res.text.should.match(/xml/);
+				done();
+			});
+	});
+
+	it('GET /catalog', function(done) {
+		agent.get('catalog.xml')
+			.expect(200)
+			.end(function (err, res) {
+				res.text.should.match(/xml/);
+				done();
+			});
+	});
+
+	it('GET /sku', function(done) {
+		agent.get('sku.xml')
+			.expect(200)
+			.end(function (err, res) {
+				res.text.should.match(/xml/);
+				done();
+			});
+	});
+
+	it('GET /availability', function(done) {
+		agent.get('availability.xml')
+			.expect(200)
+			.end(function (err, res) {
 				res.text.should.match(/xml/);
 				done();
 			});
