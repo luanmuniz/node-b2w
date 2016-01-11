@@ -1,50 +1,6 @@
 var should = require('chai').should(),
 	expect = require('chai').expect,
-	request = require('supertest'),
-	app = require('./mock/app'),
-	agent = request(app),
 	realLib = require('../index');
-
-describe('Checking xml mock', function() {
-
-	it('GET /product', function(done) {
-		agent.get('product.xml')
-			.expect(200)
-			.end(function (err, res) {
-				console.log(err, res);
-				res.text.should.match(/xml/);
-				done();
-			});
-	});
-
-	it('GET /catalog', function(done) {
-		agent.get('catalog.xml')
-			.expect(200)
-			.end(function (err, res) {
-				res.text.should.match(/xml/);
-				done();
-			});
-	});
-
-	it('GET /sku', function(done) {
-		agent.get('sku.xml')
-			.expect(200)
-			.end(function (err, res) {
-				res.text.should.match(/xml/);
-				done();
-			});
-	});
-
-	it('GET /availability', function(done) {
-		agent.get('availability.xml')
-			.expect(200)
-			.end(function (err, res) {
-				res.text.should.match(/xml/);
-				done();
-			});
-	});
-
-});
 
 describe('Testing App', function() {
 
