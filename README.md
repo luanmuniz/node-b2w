@@ -24,7 +24,7 @@ Having trouble? Or new ideas? Post a new issue! We will be glad to help you!
 [MIT License](http://zimp.mit-license.org) © Zimp Recompensas
 
 [circle-url]: https://circleci.com/gh/ZimpFidelidade/node-b2w
-[circle-image]: https://circleci.com/gh/ZimpFidelidade/node-b2w.svg?style=svg
+[circle-image]: https://img.shields.io/circleci/project/ZimpFidelidade/node-b2w.svg
 [depstat-url]: https://david-dm.org/ZimpFidelidade/node-b2w
 [depstat-image]: https://david-dm.org/ZimpFidelidade/node-b2w.png
 [coveralls-image]: https://coveralls.io/repos/ZimpFidelidade/node-b2w/badge.svg?branch=master&service=github
