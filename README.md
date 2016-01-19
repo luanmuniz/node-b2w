@@ -1,11 +1,16 @@
 B2W Node
 ===================
 
-> A library for the B2W Group (Americanas.com, Submarino & Shoptime) API using Promises
+> A nonofficial library for the B2W Group (Americanas, Submarino & Shoptime) B2B public API using Promises
 
 [![Circle CI][circle-image]][circle-url] [![Dependency Status][depstat-image]][depstat-url] [![Coveralls][coveralls-image]][coveralls-url] [![NPM Version][node-image]][node-url]
 
 [![Node Build][nodei-image]][nodei-url]
+
+## Você trabalha no grupo B2W?
+
+Não de preocupe, este repositório não contem nenhuma informação sensível sendo apenas um empacotamento da API publica para clientes B2B para ser usado na plataforma Nodejs e não contém nenhuma chave de acesso, rotas privadas ou algo parecido.
+Caso você queira entrar em contato sobre este repositório você pode postar uma issue [clicando aqui](/issues/new) ou atravéz do email [suporte@zimp.me](mailto:suporte@zimp.me)
 
 ## Documentation
 

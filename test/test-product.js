@@ -143,7 +143,7 @@ describe('Products', function() {
 			lib.getCatalogByLastUpdate()
 				.catch(function(result) {
 					result.should.be.an('object');
-					result.should.have.property('sucess').that.is.equal(false);
+					result.should.have.property('success').that.is.equal(false);
 					result.should.have.property('code').that.is.equal('invalidDate');
 					result.should.have.property('message').that.is.a('string');
 
@@ -163,7 +163,7 @@ describe('Products', function() {
 		it('getProduct() Without passing an id', function(done) {
 			lib.getProduct().catch(function(result) {
 				result.should.be.an('object');
-				result.should.have.property('sucess').that.is.equal(false);
+				result.should.have.property('success').that.is.equal(false);
 				result.should.have.property('code').that.is.equal('missingId');
 				result.should.have.property('message').that.is.a('string');
 
@@ -174,7 +174,7 @@ describe('Products', function() {
 		it('getProduct() using a non-existing product', function(done) {
 			lib.getProduct(321).catch(function(result) {
 				result.should.be.an('object');
-				result.should.have.property('sucess').that.is.equal(false);
+				result.should.have.property('success').that.is.equal(false);
 				result.should.have.property('code').that.is.equal('productNotFound');
 				result.should.have.property('message').that.is.a('string');
 
@@ -229,7 +229,7 @@ describe('Products', function() {
 		it('getProductsByCategory() Without passing an id', function(done) {
 			lib.getProductsByCategory().catch(function(result) {
 				result.should.be.an('object');
-				result.should.have.property('sucess').that.is.equal(false);
+				result.should.have.property('success').that.is.equal(false);
 				result.should.have.property('code').that.is.equal('missingId');
 				result.should.have.property('message').that.is.a('string');
 
@@ -240,7 +240,7 @@ describe('Products', function() {
 		it('getProductsByCategory() using a non-existing product', function(done) {
 			lib.getProductsByCategory(321).catch(function(result) {
 				result.should.be.an('object');
-				result.should.have.property('sucess').that.is.equal(false);
+				result.should.have.property('success').that.is.equal(false);
 				result.should.have.property('code').that.is.equal('categoryNotFound');
 				result.should.have.property('message').that.is.a('string');
 
@@ -264,7 +264,7 @@ describe('Products', function() {
 		it('getSkus() Without passing an id', function(done) {
 			lib.getSkus().catch(function(result) {
 				result.should.be.an('object');
-				result.should.have.property('sucess').that.is.equal(false);
+				result.should.have.property('success').that.is.equal(false);
 				result.should.have.property('code').that.is.equal('missingIds');
 				result.should.have.property('message').that.is.a('string');
 
@@ -275,7 +275,7 @@ describe('Products', function() {
 		it('getSkus() using a non-existing product', function(done) {
 			lib.getSkus(987).catch(function(result) {
 				result.should.be.an('object');
-				result.should.have.property('sucess').that.is.equal(false);
+				result.should.have.property('success').that.is.equal(false);
 				result.should.have.property('code').that.is.equal('skuNotFound');
 				result.should.have.property('message').that.is.a('string');
 
@@ -304,7 +304,7 @@ describe('Products', function() {
 		it('getSkuAvailability() Without passing an id', function(done) {
 			lib.getSkuAvailability().catch(function(result) {
 				result.should.be.an('object');
-				result.should.have.property('sucess').that.is.equal(false);
+				result.should.have.property('success').that.is.equal(false);
 				result.should.have.property('code').that.is.equal('missingId');
 				result.should.have.property('message').that.is.a('string');
 
@@ -315,7 +315,7 @@ describe('Products', function() {
 		it('getSkuAvailability() using a non-existing product', function(done) {
 			lib.getSkuAvailability(321).catch(function(result) {
 				result.should.be.an('object');
-				result.should.have.property('sucess').that.is.equal(false);
+				result.should.have.property('success').that.is.equal(false);
 				result.should.have.property('code').that.is.equal('skuNotFound');
 				result.should.have.property('message').that.is.a('string');
 

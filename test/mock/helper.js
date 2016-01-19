@@ -2,7 +2,7 @@
 
 var coreApi = require('../../lib/core').init({
 	symbol: 'symbolTest',
-	company: 'Americanas',
+	company: 'americanas',
 	login: 'loginTest',
 	password: 'passwordTest'
 }),

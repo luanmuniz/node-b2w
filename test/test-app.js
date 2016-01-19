@@ -16,7 +16,7 @@ describe('Testing App', function() {
 	it('Dev Env', function(done) {
 		var lib = realLib({
 			symbol: 'symbolTest',
-			company: 'Americanas',
+			company: 'americanas',
 			login: 'loginTest',
 			password: 'passwordTest'
 		}, 'development');
@@ -28,7 +28,7 @@ describe('Testing App', function() {
 	it('Check Index', function(done) {
 		var lib = realLib({
 			symbol: 'symbolTest',
-			company: 'Americanas',
+			company: 'americanas',
 			login: 'loginTest',
 			password: 'passwordTest'
 		});
@@ -50,7 +50,7 @@ describe('Testing App', function() {
 	it('parseResponse Error', function(done) {
 		var lib = realLib({
 			symbol: 'symbolTest',
-			company: 'Americanas',
+			company: 'americanas',
 			login: 'loginTest',
 			password: 'passwordTest'
 		}, 'development');
@@ -65,7 +65,7 @@ describe('Testing App', function() {
 	it('errorHandler Without valid Section', function(done) {
 		var lib = realLib({
 			symbol: 'symbolTest',
-			company: 'Americanas',
+			company: 'americanas',
 			login: 'loginTest',
 			password: 'passwordTest'
 		}, 'development');
@@ -73,7 +73,7 @@ describe('Testing App', function() {
 		lib.coreAPI.errorHandler('test', 'teste')
 			.catch(function(err){
 				err.should.be.an('object');
-				err.should.have.property('sucess').that.is.equal(false);
+				err.should.have.property('success').that.is.equal(false);
 				err.should.have.property('code').that.is.equal('teste');
 				err.should.have.property('message').that.is.a('string');
 				done();
@@ -83,7 +83,7 @@ describe('Testing App', function() {
 	it('errorHandler Without valid Code', function(done) {
 		var lib = realLib({
 			symbol: 'symbolTest',
-			company: 'Americanas',
+			company: 'americanas',
 			login: 'loginTest',
 			password: 'passwordTest'
 		}, 'development');
@@ -91,7 +91,7 @@ describe('Testing App', function() {
 		lib.coreAPI.errorHandler('core', 'teste')
 			.catch(function(err){
 				err.should.be.an('object');
-				err.should.have.property('sucess').that.is.equal(false);
+				err.should.have.property('success').that.is.equal(false);
 				err.should.have.property('code').that.is.equal('teste');
 				err.should.have.property('message').that.is.a('string');
 				done();
@@ -102,7 +102,7 @@ describe('Testing App', function() {
 		this.timeout(10000);
 		var lib = realLib({
 			symbol: 'symbolTest',
-			company: 'Americanas',
+			company: 'americanas',
 			login: 'loginTest',
 			password: 'passwordTest'
 		}, 'development');
@@ -122,7 +122,7 @@ describe('Testing App', function() {
 		this.timeout(10000);
 		var lib = realLib({
 			symbol: 'symbolTest',
-			company: 'Americanas',
+			company: 'americanas',
 			login: 'loginTest',
 			password: 'passwordTest'
 		}, 'development');
