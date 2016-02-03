@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<response xmlns='http://ideais-commerce.com.br/order-response'><id>02-621189165</id><serviceId>123451236</serviceId><message>Pedido salvo com sucesso. ID: 02-621189165</message><success>true</success><items><itemInfo><skuId>121963444</skuId><subInventory>7701</subInventory><cnpj>73453886000100</cnpj></itemInfo></items></response>

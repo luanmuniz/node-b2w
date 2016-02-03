@@ -139,6 +139,12 @@ describe('Products', function() {
 			});
 		});
 
+		it('getCatalog(page, limit)', function(done) {
+			lib.getCatalog(1, 100).then(function(result) {
+				testProductList(result, done);
+			});
+		});
+
 		it('getCatalogByLastUpdate() Without passing a DateLimit', function(done) {
 			lib.getCatalogByLastUpdate()
 				.catch(function(result) {
@@ -153,6 +159,13 @@ describe('Products', function() {
 
 		it('getCatalogByLastUpdate(1)', function(done) {
 			lib.getCatalogByLastUpdate(1)
+				.then(function(result) {
+					testProductList(result, done);
+				});
+		});
+
+		it('getCatalogByLastUpdate(1, page, limit)', function(done) {
+			lib.getCatalogByLastUpdate(1, 1, 100)
 				.then(function(result) {
 					testProductList(result, done);
 				});
@@ -258,6 +271,13 @@ describe('Products', function() {
 					testProductList(result, done);
 				});
 		});
+
+		it('getProductsByCategory(123, page, limit)', function(done) {
+			lib.getProductsByCategory(123, 1, 100)
+				.then(function(result) {
+					testProductList(result, done);
+				});
+		});
 	});
 
 	describe('getSkus', function() {
@@ -328,6 +348,19 @@ describe('Products', function() {
 
 		it('getSkuAvailability(123)', function(done) {
 			lib.getSkuAvailability(123)
+				.then(function(result) {
+					result.should.be.an('object');
+					result.should.have.property('externalId').that.is.a('string');
+					result.should.have.property('name').that.is.a('string');
+					result.should.have.property('isAvailable').that.is.equal(true);
+					result.should.have.property('salePrice').that.is.a('number');
+					result.should.have.property('defaultPrice').that.is.a('number');
+					done();
+				});
+		});
+
+		it('getSkuAvailability() with salesPrice === 0', function(done) {
+			lib.getSkuAvailability(1)
 				.then(function(result) {
 					result.should.be.an('object');
 					result.should.have.property('externalId').that.is.a('string');
