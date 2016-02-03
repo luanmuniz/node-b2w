@@ -10,7 +10,7 @@ B2W Node
 ## Você trabalha no grupo B2W?
 
 Não de preocupe, este repositório não contem nenhuma informação sensível sendo apenas um empacotamento da API publica para clientes B2B para ser usado na plataforma Nodejs e não contém nenhuma chave de acesso, rotas privadas ou algo parecido.
-Caso você queira entrar em contato sobre este repositório você pode postar uma issue [clicando aqui](/issues/new) ou atravéz do email [suporte@zimp.me](mailto:suporte@zimp.me)
+Caso você queira entrar em contato sobre este repositório você pode postar uma issue [clicando aqui](https://github.com/ZimpFidelidade/node-b2w/issues/new) ou atravéz do email [suporte@zimp.me](mailto:suporte@zimp.me)
 
 ## Documentation
 

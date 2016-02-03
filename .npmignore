@@ -7,3 +7,4 @@ gulpfile.js
 test
 docs
 CONTRIBUTING.md
+circle.yml
