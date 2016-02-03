@@ -1,6 +1,6 @@
 # Erros
 
-Esta seção trata dos erros do sistema. Todos os erros são capiturados via `.catch()`.
+Esta seção trata dos erros do sistema. Todos os erros são capturados via `.catch()`.
 
 ## Objeto de Erro
 
@@ -13,7 +13,7 @@ Em todos os métodos o objeto de erro contém a mesma estrutura. A estrutura usa
 | message   | Mensagem descritiva de qual é o problema                                        | String            |
 | err       | Instancia de Error() caso este for declarado                                    | Instance of Error |
 
-## Lista completa de Erros
+## Lista de Erros
 
 | Seção    | Código             | Mensagem                                                   |
 |----------|--------------------|------------------------------------------------------------|
@@ -26,11 +26,11 @@ Em todos os métodos o objeto de erro contém a mesma estrutura. A estrutura usa
 | products | categoryNotFound   | Category not found                                         |
 | products | skuNotFound        | Sku not found                                              |
 | products | invalidDate        | You need to pass a valid date                              |
-| order    | missingId          | You need to pass a valid id                                |
-| order    | orderNotFound      | Order not found                                            |
 | client   | missingId          | You need to pass a valid id                                |
 | client   | clientNotFound     | Client not found                                           |
 | category | missingId          | You need to pass a valid id                                |
 | tracking | missingZipCode     | You need to pass a valid zipcode                           |
 | tracking | missingPayment     | You need to pass a valid payment type                      |
 | tracking | missingSku         | You need to pass a valid Sku                               |
+
+## Lista de Erros da seção de Pedidos (`b2w.order`)

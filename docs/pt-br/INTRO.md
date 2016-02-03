@@ -6,7 +6,7 @@ Este modulo é uma abstração da API do Grupo B2W para clientes B2B. Para utili
 
 Este modulo não é oficial, isso significa que não foi criado pela equipe do Grupo B2W e sim por um parceiro terceiro. Caso você precise de algum suporte ou orientação para usar este modulo por favor crie um issue neste repositório e NÃO entre em contato com o suporte técnico do Grupo B2W.
 
-Este modulo não contém nenhuma informação privilegiada sendo somente uma abstração da API Publica para os parceiros B2B. Se você trabalha dentro do Grupo B2W e ficou preocupado com o conteúdo deste projeto, desde já esclareço que não existe nenhum dado de natureza privada e ou interna. Caso você precise de algum esclarecimento de qualquer natureza você pode entrar em contato criando uma issue [clicando aqui](/issues/new) ou através do email [suporte@zimp.me](mailto:suporte@zimp.me)
+Este modulo não contém nenhuma informação privilegiada sendo somente uma abstração da API Publica para os parceiros B2B. Se você trabalha dentro do Grupo B2W e ficou preocupado com o conteúdo deste projeto, desde já esclareço que não existe nenhum dado de natureza privada e ou interna. Caso você precise de algum esclarecimento de qualquer natureza você pode entrar em contato criando uma issue [clicando aqui](https://github.com/ZimpFidelidade/node-b2w/issues/new) ou através do email [suporte@zimp.me](mailto:suporte@zimp.me)
 
 ## Instalação
 
@@ -50,8 +50,7 @@ Como retorno do método `init()` temos o modulo inicializado com acesso aos obje
 	"products": [Object],
 	"tracking": [Object],
 	"categories": [Object],
-	"order": [Object],
-	"client": [Object]
+	"order": [Object]
 }
 ```
 
@@ -59,7 +58,6 @@ Como retorno do método `init()` temos o modulo inicializado com acesso aos obje
 - [b2w.tracking](/docs/pt-br/Tracking.md) - Este modulo contém todas os métodos de consulta de frete
 - [b2w.categories](/docs/pt-br/Categories.md) - Este modulo contém todas os métodos de consulta de categorias disponíveis no catalogo
 - [b2w.order](/docs/pt-br/Orders.md) - Este modulo contém todas os métodos de consulta e criação de pedidos
-- [b2w.client](/docs/pt-br/Clients.md) - Este modulo contém todas os métodos de consulta de clientes
 
 ### Error
 
