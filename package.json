@@ -1,6 +1,6 @@
 {
   "name": "b2w",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A library for the B2W Group (Americanas[dot]com, Submarino & Shoptime) API using Promises",
   "author": "Luan Muniz <luan@luanmuniz.com.br> (http://github.com/luanmuniz)",
   "homepage": "https://github.com/ZimpFidelidade/node-b2w",
