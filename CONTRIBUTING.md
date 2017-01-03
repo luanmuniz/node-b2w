@@ -11,7 +11,7 @@ The maintainers of the project are:
 
 - In lieu of a formal styleguide, take care to maintain the existing coding style and please do follow [idiomatic.js](https://github.com/rwldrn/idiomatic.js)
 - Add unit tests for any new or changed functionality.
-- Lint and test your code using [grunt](https://github.com/cowboy/grunt).
+- Lint and test your code using npm
 
 And please:
 
